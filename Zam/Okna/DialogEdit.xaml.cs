@@ -18,11 +18,9 @@ namespace Zam.Okna
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {//Uložit
-
             Z.Jmeno = ProJmeno.Text;
             Z.Prijmeni = ProPrijmeni.Text;
             Z.DatumNarozeni = DateTime.Parse(ProDatum.Text);
-
             this.Close();
         }
 
