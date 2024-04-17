@@ -1,0 +1,30 @@
+﻿<Window x:Class="Zam.Okna.DialogPridat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zam.Okna"
+        mc:Ignorable="d"
+        Title="DialogPridat" Height="450" Width="450">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FFF4FBFA"/>
+                <GradientStop Color="#FF53D619" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        
+        <Label Content="Jméno:" HorizontalAlignment="Left" Margin="95,68,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ProJmeno" HorizontalAlignment="Left" Margin="190,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        
+        <Label Content="Přijmeni:" HorizontalAlignment="Left" Margin="95,121,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ProJPrijemni" HorizontalAlignment="Left" Margin="190,125,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+
+        <DatePicker x:Name="ProDatum" HorizontalAlignment="Left" Margin="197,175,0,0" VerticalAlignment="Top"/>
+        <Label Content="Datum narození:" HorizontalAlignment="Left" Margin="95,174,0,0" VerticalAlignment="Top"/>
+        
+        <Button Content="Uložit" HorizontalAlignment="Left" Margin="65,346,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click_1"/>
+        <Button Content="Zahodit" HorizontalAlignment="Left" Margin="260,346,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click"/>
+
+    </Grid>
+</Window>

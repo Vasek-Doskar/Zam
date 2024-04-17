@@ -1,0 +1,53 @@
+﻿<Window x:Class="Zam.Okna.DialogEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zam.Okna"
+        mc:Ignorable="d"
+        Title="DialogEdit" Height="300" Width="400">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FFE8391D"/>
+                <GradientStop Color="#FFE615DE" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <TextBox
+            x:Name="ProJmeno"
+            HorizontalAlignment="Center" 
+            Margin="0,49,0,0"
+            TextWrapping="Wrap"
+            Text="{Binding Jmeno, Mode=OneWay}" 
+            VerticalAlignment="Top"
+            Width="120"/>
+        
+        <TextBox 
+            x:Name="ProPrijmeni"
+            HorizontalAlignment="Center" 
+            Margin="0,101,0,0"
+            TextWrapping="Wrap"
+            Text="{Binding Prijmeni, Mode=OneWay}"
+            VerticalAlignment="Top" 
+            Width="120"/>
+        
+        <DatePicker HorizontalAlignment="Center" 
+                    Margin="0,143,0,0" 
+                    x:Name="ProDatum"
+                    SelectedDate="{Binding DatumNarozeni, Mode=OneWay}"
+                    VerticalAlignment="Top"/>
+        
+        <Button Content="Uložit"
+                HorizontalAlignment="Left"
+                Margin="99,221,0,0"
+                VerticalAlignment="Top"
+                Click="Button_Click"
+                Width="60"/>
+        
+        <Button Content="Zahodit"
+                HorizontalAlignment="Left"
+                Margin="238,221,0,0"
+                VerticalAlignment="Top" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
